@@ -175,7 +175,7 @@ function gameOver() {
     ? (correctLetters / totalLetters) * 100
     : 0 
 
-  const wpm = correctLetters * 60 / INITIAL_TIME
+  const wpm = correctWords * 60 / INITIAL_TIME
   $wpm.textContent = wpm 
   $accuracy.textContent = `${accuracy.toFixed(2)}%`
   console.log('Game Over')
